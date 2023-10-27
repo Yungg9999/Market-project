@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketDB", "MarketDB\MarketDB.csproj", "{3D456FE5-DF8D-4023-A49E-6B7A1315BEE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D456FE5-DF8D-4023-A49E-6B7A1315BEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D456FE5-DF8D-4023-A49E-6B7A1315BEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D456FE5-DF8D-4023-A49E-6B7A1315BEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D456FE5-DF8D-4023-A49E-6B7A1315BEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {952ACF3E-84D6-4C63-B932-AA884B50EACB}
+	EndGlobalSection
+EndGlobal
