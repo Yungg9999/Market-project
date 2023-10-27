@@ -30,10 +30,10 @@ namespace MarketDB
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -332,12 +332,6 @@ namespace MarketDB
             this.panel87 = new System.Windows.Forms.Panel();
             this.panel88 = new System.Windows.Forms.Panel();
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel89 = new System.Windows.Forms.Panel();
             this.button26 = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
@@ -357,6 +351,12 @@ namespace MarketDB
             this.vASKET_LISTTableAdapter = new MarketDB.DataSet1TableAdapters.VASKET_LISTTableAdapter();
             this.pURCHASETableAdapter = new MarketDB.DataSet1TableAdapters.PURCHASETableAdapter();
             this.pURCHASE_LISTTableAdapter = new MarketDB.DataSet1TableAdapters.PURCHASE_LISTTableAdapter();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -843,6 +843,7 @@ namespace MarketDB
             this.textBox2.Location = new System.Drawing.Point(4, 21);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(354, 27);
             this.textBox2.TabIndex = 0;
             // 
@@ -967,7 +968,7 @@ namespace MarketDB
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 494);
             this.label2.TabIndex = 0;
-            this.label2.Text = "5532700 서상윤 / 최종version";
+            this.label2.Text = "서상윤 / 최종version";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // panel4
@@ -1769,40 +1770,40 @@ namespace MarketDB
             // 
             // chart1
             // 
-            chartArea1.AxisX.Interval = 1D;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.LabelStyle.Angle = 45;
-            chartArea1.AxisX.ScaleView.Size = 10D;
-            chartArea1.AxisX.ScrollBar.BackColor = System.Drawing.Color.Silver;
-            chartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
-            chartArea1.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea4.AxisX.Interval = 1D;
+            chartArea4.AxisX.IsLabelAutoFit = false;
+            chartArea4.AxisX.LabelStyle.Angle = 45;
+            chartArea4.AxisX.ScaleView.Size = 10D;
+            chartArea4.AxisX.ScrollBar.BackColor = System.Drawing.Color.Silver;
+            chartArea4.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Silver;
+            chartArea4.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
+            chartArea4.AxisX.TitleFont = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
+            chartArea4.AxisY.TitleFont = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
             this.chart1.DataSource = this.pRODUCTBindingSource;
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend1.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend4.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
+            legend4.IsTextAutoFit = false;
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(4, 3);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "판매";
-            series1.XValueMember = "P_NAME";
-            series1.YValueMembers = "P_SOLD";
-            series2.ChartArea = "ChartArea1";
-            series2.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
-            series2.Legend = "Legend1";
-            series2.Name = "환불";
-            series2.XValueMember = "P_NAME";
-            series2.YValueMembers = "P_REFUND";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series7.ChartArea = "ChartArea1";
+            series7.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series7.Legend = "Legend1";
+            series7.Name = "판매";
+            series7.XValueMember = "P_NAME";
+            series7.YValueMembers = "P_SOLD";
+            series8.ChartArea = "ChartArea1";
+            series8.Font = new System.Drawing.Font("한컴 고딕", 8.249999F, System.Drawing.FontStyle.Bold);
+            series8.Legend = "Legend1";
+            series8.Name = "환불";
+            series8.XValueMember = "P_NAME";
+            series8.YValueMembers = "P_REFUND";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(685, 339);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -3887,7 +3888,7 @@ namespace MarketDB
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage8.Size = new System.Drawing.Size(1121, 465);
             this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "리뷰";
+            this.tabPage8.Text = "판매현황";
             // 
             // panel83
             // 
@@ -3951,8 +3952,8 @@ namespace MarketDB
             this.dataGridViewTextBoxColumn32,
             this.dataGridViewTextBoxColumn33,
             this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36});
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn35});
             this.dataGridView11.DataSource = this.pRODUCTBindingSource1;
             this.dataGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView11.Location = new System.Drawing.Point(4, 3);
@@ -3962,60 +3963,6 @@ namespace MarketDB
             this.dataGridView11.RowTemplate.Height = 23;
             this.dataGridView11.Size = new System.Drawing.Size(685, 339);
             this.dataGridView11.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "P_ID";
-            this.dataGridViewTextBoxColumn31.HeaderText = "P_ID";
-            this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            this.dataGridViewTextBoxColumn31.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "P_NAME";
-            this.dataGridViewTextBoxColumn32.HeaderText = "P_NAME";
-            this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "P_PRICE";
-            this.dataGridViewTextBoxColumn33.HeaderText = "P_PRICE";
-            this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "P_TYPENAME";
-            this.dataGridViewTextBoxColumn34.HeaderText = "P_TYPENAME";
-            this.dataGridViewTextBoxColumn34.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "P_REFUND";
-            this.dataGridViewTextBoxColumn35.HeaderText = "P_REFUND";
-            this.dataGridViewTextBoxColumn35.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            this.dataGridViewTextBoxColumn35.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "P_SOLD";
-            this.dataGridViewTextBoxColumn36.HeaderText = "P_SOLD";
-            this.dataGridViewTextBoxColumn36.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            this.dataGridViewTextBoxColumn36.Width = 125;
             // 
             // panel89
             // 
@@ -4170,6 +4117,60 @@ namespace MarketDB
             // pURCHASE_LISTTableAdapter
             // 
             this.pURCHASE_LISTTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "P_ID";
+            this.dataGridViewTextBoxColumn31.HeaderText = "상품ID";
+            this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.dataGridViewTextBoxColumn31.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "P_NAME";
+            this.dataGridViewTextBoxColumn32.HeaderText = "상품이름";
+            this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            this.dataGridViewTextBoxColumn32.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "P_PRICE";
+            this.dataGridViewTextBoxColumn33.HeaderText = "상품가격";
+            this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "P_TYPENAME";
+            this.dataGridViewTextBoxColumn34.HeaderText = "상품종류";
+            this.dataGridViewTextBoxColumn34.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.dataGridViewTextBoxColumn34.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "P_SOLD";
+            this.dataGridViewTextBoxColumn36.HeaderText = "판매횟수";
+            this.dataGridViewTextBoxColumn36.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.ReadOnly = true;
+            this.dataGridViewTextBoxColumn36.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "P_REFUND";
+            this.dataGridViewTextBoxColumn35.HeaderText = "환불횟수";
+            this.dataGridViewTextBoxColumn35.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.ReadOnly = true;
+            this.dataGridViewTextBoxColumn35.Width = 125;
             // 
             // Form1
             // 
@@ -4529,12 +4530,6 @@ namespace MarketDB
         private System.Windows.Forms.Panel panel87;
         private System.Windows.Forms.Panel panel88;
         private System.Windows.Forms.DataGridView dataGridView11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
         private System.Windows.Forms.Panel panel89;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Label label29;
@@ -4682,6 +4677,12 @@ namespace MarketDB
         private System.Windows.Forms.DataGridViewTextBoxColumn pCAMIDDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn pCATOTALPRICEDataGridViewTextBoxColumn1;
         private System.Windows.Forms.Panel Adminpanel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
     }
 }
 

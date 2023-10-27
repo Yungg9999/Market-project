@@ -439,6 +439,7 @@ namespace MarketDB
             this.textBox2.Location = new System.Drawing.Point(4, 14);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(213, 27);
             this.textBox2.TabIndex = 2;
             // 
